@@ -1,0 +1,76 @@
+/*Polices*/
+@font-face {
+    font-family: 'raleway';
+    src: url('Fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('Fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*général*/
+#bloc_page
+{
+    font-family: 'raleway', sans-serif;
+    width: 93%;
+    margin: auto;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: black;
+}
+
+h1, h2, h3
+{
+    font-weight: bold;
+}
+
+/*header*/
+header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+nav li
+{
+    margin-left: 25px;
+}
+
+nav a:hover
+{
+    border-top: 4px solid #0065FC;
+    padding-top: 40px;
+}
+                                    /*à voir avec ange, ainsi que alerte w3c h1*/
+#inscrire
+{
+    color: #0065FC;
+}
+                                    /******************/
+#logo img
+{
+    width: 87px;
+    height: 35px;
+    padding-top: 30px;
+}
+
+/*zone de recherche*/
