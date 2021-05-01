@@ -48,7 +48,7 @@ nav ul
 
 nav li
 {
-    margin-left: 35px;
+    margin-left: 70px;
 }
 
 nav a:hover
@@ -81,36 +81,39 @@ nav a:hover
 .intro h1
 {
     margin-bottom: -10px;
-    font-weight: 900;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 form
 {
     display: flex;
-    flex-wrap: nowrap;
-    width: 300px;
-    height: 30px;
-    margin-top: -5px;
-    border: 2px solid #F2F2F2;
-    border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
-}
-
-#recherche
-{
-    display: inline-block;
 }
 
 #ville
 {
-    float: left;
-    margin-left: 5px;
+    width: 250px;
+    height: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    border: 1px solid #F2F2F2;
 }
 
-.icone_position
+.position
 {
-    float: left;
-    margin: auto;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    padding: 12px 18px;
+}
+
+#button
+{
+    width: 110px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font: 1em bold;
 }
 
 /**************************************Filtres****************************************/
@@ -119,6 +122,8 @@ form
 {
     margin-top: 8px;
     font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 15px;
 }
 
 
@@ -126,18 +131,86 @@ form
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-top: 15px;
+    flex-wrap: wrap;
+    margin-top: 22px;
 }
 
 .filtre-tag
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-left: 30px;
-    border: 3px solid #F2F2F2;
-    border-radius: 25px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    border-left: none;
     font-weight: bold;
-    padding: 5px 15px 5px 15px;
+    margin-left: 3.2em;
+}
+
+.filtre-tag:hover
+{
+    box-shadow: 5px 5px 3px #DEEBFF;
+}
+
+.icone
+{
+    color: #0065FC;
+    font-size: 1.4em;
+}
+
+.icone i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2em;
+    min-height: 2em;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+}
+
+.texte
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.nb_logements
+{
+    display: flex;
+    margin-top: 1.1em;
+    margin-bottom: 2em;
+}
+
+.nb_logements span
+{
+    display: flex;
+}
+
+.nb_logements i
+{
+    display: flex;
+    width: 1.8em;
+    height: 1.8em;
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.legende
+{
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+/*********************************Section 1*******************************************/
+
+#hotels
+{
+    display: flex;
+    width: 550px;
 }
