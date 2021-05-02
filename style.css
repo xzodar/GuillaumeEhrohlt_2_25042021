@@ -11,7 +11,7 @@
 #bloc_page
 {
     font-family: 'raleway', sans-serif;
-    width: 93%;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -31,6 +31,11 @@ a:visited
     color: black;
 }
 
+section
+{
+    margin: 0 3em;
+}
+
 /**************************************Header*********************************************/
 header
 {
@@ -38,6 +43,7 @@ header
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    margin: 0 3em;
 }
 
 nav ul
@@ -81,7 +87,7 @@ nav a:hover
 .intro h1
 {
     margin-bottom: -10px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
@@ -207,10 +213,84 @@ form
     margin-left: 1em;
 }
 
-/*********************************Section 1*******************************************/
+/*********************************Section hébergement*******************************************/
 
 #hotels
 {
     display: flex;
-    width: 550px;
+}
+
+#hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    padding-top: 0.8em;
+    height: 600px;
+}
+
+.conteneur
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_hebergement
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 6px solid white;
+    border-radius: 10%;
+    height: 180px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px grey;
+}
+
+.card_hebergement img
+{
+    width: 220px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.card_hebergement h3
+{
+    margin-top: 0;
+    margin-bottom: -0.5em;
+    font-weight: bold;
+}
+
+.card_hebergement p
+{
+    font-size: 0.85em;
+}
+
+.suite
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/************************************stars*************************************/
+
+.stars
+{
+    margin-top: -0.5em;
+    color: #0065FC;
+}
+
+.stars i
+{
+    width: 14px;
+    height: 11px;
+}
+
+.empty_stars
+{
+    color: #F2F2F2;
 }
