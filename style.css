@@ -12,7 +12,6 @@
 {
     font-family: 'raleway', sans-serif;
     max-width: 1440px;
-    margin: auto;
 }
 
 ul li
@@ -301,6 +300,7 @@ aside
     display: flex;
     justify-content: space-between;
     margin-left: 2.3em;
+    margin-top: 0.8em;
 }
 
 .icone_popularite
@@ -320,6 +320,7 @@ aside
     width: 80%;
     margin: auto;
     margin-bottom: 2em;
+    box-shadow: 0 0 12px grey;
 }
 
 .card_populaire a
@@ -354,8 +355,6 @@ aside
     margin-bottom: 3em;
 }
 
-
-
 /************************************stars*************************************/
 
 .stars
@@ -374,4 +373,146 @@ aside
 .empty_stars
 {
     color: #F2F2F2;
+}
+
+/**********************************Activités**********************************/
+
+#activites
+{
+    margin-top: 3em;
+}
+
+#activites h2
+{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+#cards_activites
+{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.card_activite_solo
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+
+.title_activite h3
+{
+    margin: 1em 0 0 1em;
+    font-size: 1.1em;
+}
+
+.img_activite_solo img
+{
+    width: 100%;
+    height: 430px;
+}
+
+.double_activite
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+}
+
+.card_activite1
+{
+    width: 100%;
+    height: 255px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+
+.img_activite1 img
+{
+    width: 100%;
+    height: 185px;
+}
+
+.card_activite2
+{
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+
+.img_activite2 img
+{
+    width: 100%;
+    height: 115px;
+}
+
+.card_activite3
+{
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+
+.img_activite3 img
+{
+    width: 100%;
+    height: 155px;
+}
+
+.card_activite4
+{
+    width: 100%;
+    height: 225px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    overflow: hidden;
+}
+
+.img_activite4 img
+{
+    width: 100%;
+    height: 165px;
+}
+
+/********************************************Footer***************************************/
+
+footer
+{
+    width: 100%;
+    height: 180px;
+    background-color: #F2F2F2;
+    font-family: raleway, sans-serif;
+    margin-top: 3em;
+    display: flex;
+}
+
+#a_propos, #nos_hebergements
+{
+    margin-right: 250px;
+}
+
+footer h3
+{
+    padding-left: 2.3em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+footer li
+{
+    font-size: 0.9em;
+    margin-bottom: 1em;
 }
