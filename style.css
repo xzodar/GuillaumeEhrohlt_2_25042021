@@ -6,12 +6,31 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family:"Raleway Bold";
+    src:url("Fonts/Raleway_Bold/Raleway-Bold.eot") format("eot"),
+        url("Fonts/Raleway_Bold/Raleway-Bold.woff") format("woff"),
+        url("Fonts/Raleway_Bold/Raleway-Bold.ttf") format("truetype"),
+        url("Fonts/Raleway_Bold/Raleway-Bold.svg#Raleway-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /**************************************Général******************************************/
 #bloc_page
 {
     font-family: 'raleway', sans-serif;
     max-width: 1440px;
+}
+
+h1, h2, h3
+{
+    font-family: "Raleway Bold", sans-serif;
+}
+
+body
+{
+    margin: 0;
 }
 
 ul li
@@ -58,8 +77,9 @@ nav li
 
 nav a:hover
 {
-    border-top: 4px solid #0065FC;
-    padding-top: 40px;
+    border-top: 3px solid #0065FC;
+    padding-top: 32px;
+    color: #0065FC;
 }
 
 #inscrire a
@@ -87,7 +107,6 @@ nav a:hover
 {
     margin-bottom: -10px;
     font-size: 1.6em;
-    font-weight: bold;
 }
 
 form
@@ -99,9 +118,9 @@ form
 {
     width: 250px;
     height: 3em;
-    font-weight: bold;
     padding-left: 1em;
     border: 1px solid #F2F2F2;
+    font-weight: 900;
 }
 
 .position
@@ -118,7 +137,8 @@ form
     border: none;
     background-color: #0065FC;
     color: white;
-    font: 1em bold;
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 1em;
 }
 
 /**************************************Filtres****************************************/
@@ -126,7 +146,7 @@ form
 .filtres-titre
 {
     margin-top: 8px;
-    font-weight: bold;
+    font-family: "Raleway Bold", serif;
     font-size: 1.2em;
     padding-right: 15px;
 }
@@ -146,7 +166,7 @@ form
     border: 2px solid #F2F2F2;
     border-radius: 30px;
     border-left: none;
-    font-weight: bold;
+    font-family: "Raleway Bold", sans-serif;
     margin-left: 3.2em;
 }
 
@@ -226,8 +246,9 @@ form
     padding-left: 2.3em;
     padding-right: 2.3em;
     padding-top: 0.8em;
-    height: 600px;
+    height: 100%;
     width: 800px;
+    min-height: 600px;
 }
 
 .conteneur
@@ -283,10 +304,11 @@ form
 aside
 {
     width: 450px;
-    height: 600px;
+    height: 100%;
     margin-left: 2.8em;
     background-color: #F2F2F2;
     border-radius: 30px;
+    min-height: 600px;
 }
 
 .conteneur2
@@ -491,7 +513,7 @@ aside
 footer
 {
     width: 100%;
-    height: 180px;
+    height: 100%;
     background-color: #F2F2F2;
     font-family: raleway, sans-serif;
     margin-top: 3em;
@@ -501,6 +523,11 @@ footer
 #a_propos, #nos_hebergements
 {
     margin-right: 250px;
+}
+
+#a_propos
+{
+    padding-left: 1em;
 }
 
 footer h3
