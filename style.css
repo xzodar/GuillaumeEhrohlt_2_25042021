@@ -343,6 +343,7 @@ aside
     margin: auto;
     margin-bottom: 2em;
     box-shadow: 0 0 12px grey;
+    max-height: 145px;
 }
 
 .card_populaire a
