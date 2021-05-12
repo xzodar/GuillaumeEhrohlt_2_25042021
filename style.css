@@ -544,3 +544,22 @@ footer li
     font-size: 0.9em;
     margin-bottom: 1em;
 }
+
+/***************************************media queries*************************************/
+
+@media all and (max-device-width: 480px) /*pour tous les smartphones*/
+{
+    header
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #inscrire
+    {
+        position: absolute;
+        top: 40px;
+        right: 70px;
+    }
+
+}
