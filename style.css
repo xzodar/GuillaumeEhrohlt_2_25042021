@@ -300,7 +300,7 @@ form
 
 .suite
 {
-    font-weight: bold;
+    font-family: "Raleway Bold", sans-serif;
     font-size: 1.1em;
 }
 
@@ -628,5 +628,67 @@ footer li
     .filtre-tag
     {
         margin: 0 0.6em 0.4em 0;
+    }
+
+    /**********************************order*********************************************/
+
+    #hotels #hebergements
+    {
+        order: 2;
+    }
+
+    #hotels aside
+    {
+        order: 1;
+    }
+
+    /********************************populaires****************************************/
+
+    #hotels
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    aside
+    {
+        margin-left: 0;
+        margin-bottom: 1.5em;
+        border-radius: 0%;
+        width: 100%;
+    }
+
+    /*****************************hébergements*******************************************/
+
+    #hebergements
+    {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0%;
+        border-radius: 0%;
+        background-color: #FFFFFF;
+        padding: 0%;
+    }
+
+    #hebergements h2
+    {
+        padding-left: 1.5em;
+    }
+
+    .card_hebergement
+    {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .card_hebergement img
+    {
+        width: 100%;
+    }
+
+    .suite
+    {
+        padding-left: 1.5em;
     }
 }
