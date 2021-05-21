@@ -550,7 +550,9 @@ footer li
     margin-bottom: 1em;
 }
 
+/*****************************************************************************************/
 /***************************************media queries*************************************/
+/*****************************************************************************************/
 
 @media all and (max-device-width: 480px) /*pour tous les smartphones*/
 {
@@ -597,6 +599,14 @@ footer li
     #nav_activites
     {
         padding-left: 95px;
+    }
+
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 5px solid #0065FC;
+        padding-bottom: 20px;
+        color: #0065FC;
     }
 
     /***********************************titre et recherche***************************************/
