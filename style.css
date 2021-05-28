@@ -271,7 +271,7 @@ form
     flex-direction: column;
     background-color: white;
     border: 6px solid white;
-    border-radius: 10%;
+    border-radius: 25px;
     height: 180px;
     margin-bottom: 30px;
     box-shadow: 0 0 12px grey;
@@ -281,7 +281,7 @@ form
 {
     width: 220px;
     height: 100px;
-    border-radius: 10% 10% 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .card_hebergement h3
@@ -343,7 +343,7 @@ aside
     display: flex;
     background-color: white;
     border: 6px solid white;
-    border-radius: 10%;
+    border-radius: 25px;
     width: 80%;
     margin: auto;
     margin-bottom: 2em;
@@ -368,7 +368,7 @@ aside
 {
     width: 100%;
     height: 100%;
-    border-radius: 10% 0 0 10%;
+    border-radius: 20px 0 0 20px;
 }
 
 .text_aside h3
@@ -385,14 +385,14 @@ aside
 
 /************************************stars*************************************/
 
-.stars
+.stars, .stars_aside
 {
     margin-top: -0.5em;
     color: #0065FC;
     padding-left: 0.4em;
 }
 
-.stars i
+.stars i, .stars_aside i
 {
     width: 14px;
     height: 11px;
@@ -430,7 +430,7 @@ aside
     width: 300px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
-    overflow: hidden;
+    margin: 0 1em 0 1em;
 }
 
 .title_activite h3
@@ -443,6 +443,7 @@ aside
 {
     width: 100%;
     height: 430px;
+    border-radius: 20px 20px 0 0;
 }
 
 .double_activite
@@ -460,13 +461,13 @@ aside
     height: 255px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
-    overflow: hidden;
 }
 
 .img_activite1 img
 {
     width: 100%;
     height: 185px;
+    border-radius: 20px 20px 0 0;
 }
 
 .card_activite2
@@ -475,13 +476,13 @@ aside
     height: 170px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
-    overflow: hidden;
 }
 
 .img_activite2 img
 {
     width: 100%;
     height: 115px;
+    border-radius: 20px 20px 0 0;
 }
 
 .card_activite3
@@ -490,13 +491,13 @@ aside
     height: 210px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
-    overflow: hidden;
 }
 
 .img_activite3 img
 {
     width: 100%;
     height: 155px;
+    border-radius: 20px 20px 0 0;
 }
 
 .card_activite4
@@ -505,13 +506,13 @@ aside
     height: 225px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
-    overflow: hidden;
 }
 
 .img_activite4 img
 {
     width: 100%;
     height: 165px;
+    border-radius: 20px 20px 0 0;
 }
 
 /********************************************Footer***************************************/
@@ -524,16 +525,17 @@ footer
     font-family: raleway, sans-serif;
     margin-top: 3em;
     display: flex;
-}
-
-#a_propos, #nos_hebergements
-{
-    margin-right: 250px;
+    justify-content: space-between;
 }
 
 #a_propos
 {
     padding-left: 1em;
+}
+
+#assistance
+{
+    padding-right: 10%;
 }
 
 footer h3
@@ -554,7 +556,7 @@ footer li
 /***************************************media queries*************************************/
 /*****************************************************************************************/
 
-@media all and (max-device-width: 480px) /*pour tous les smartphones*/
+@media all and (max-device-width: 590px) /*pour tous les smartphones*/
 {
 /***********************************navigation*****************************************/
     header
@@ -570,7 +572,7 @@ footer li
     {
         position: absolute;
         top: 50px;
-        right: 30px;
+        right: 5%;
     }
 
     #logo
@@ -637,7 +639,7 @@ footer li
 
     .filtre-tag
     {
-        margin: 0 0.6em 0.4em 0;
+        margin: 0 0.3em 0.4em 0;
     }
 
     /**********************************order*********************************************/
@@ -738,6 +740,11 @@ footer li
         width: 100%;
     }
 
+    .card_activite_solo
+    {
+        margin: 0 0 1.1em 0;
+    }
+
     /************************************footer*******************************************/
 
     footer
@@ -758,5 +765,210 @@ footer li
     #a_propos
     {
         padding-left: 0;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 590px)
+{
+    nav ul
+    {
+        justify-content: space-around;
+    }
+
+    #nav_activites
+    {
+        padding-left: 0;
+    }
+
+    #inscrire
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media all and (min-width: 591px) and (max-width: 950px)
+{
+    /**************************************Header*********************************************/
+    header
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 3em;
+    }
+
+    nav ul
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li
+    {
+        margin-left: 50px;
+    }
+
+    nav a:hover
+    {
+        border-top: 3px solid #0065FC;
+        padding-top: 32px;
+        color: #0065FC;
+    }
+
+    #inscrire
+    {
+        font-family: 'Raleway-Bold', sans-serif;
+    }
+
+    #inscrire a
+    {
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #logo img
+    {
+        width: 87px;
+        height: 35px;
+        padding-top: 30px;
+    }
+
+    /***********************************titre et recherche***************************************/
+
+    section
+    {
+        margin: 0 1.2em;
+    }
+    
+    .intro h1
+    {
+        font-size: 1.55em;
+    }
+
+    .intro p
+    {
+        font-size: 1.1em;
+        margin: 1.25em 0 1.7em 0;
+    }
+
+    /***************************************filtres********************************************/
+
+    .filtres-titre
+    {
+        width: 100%;
+        margin-bottom: 0.8em;
+    }
+
+    .filtre-tag
+    {
+        margin: 0 0.3em 0.4em 0;
+    }
+
+    /**********************************order*********************************************/
+
+    #hotels #hebergements
+    {
+        order: 2;
+    }
+
+    #hotels aside
+    {
+        order: 1;
+    }
+
+    /********************************populaires****************************************/
+
+    #hotels
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .titre_populaire
+    {
+        margin-left: 1.5em;
+    }
+
+    aside
+    {
+        margin-left: 0;
+        margin-bottom: 1.5em;
+        border-radius: 0%;
+        width: 100%;
+    }
+
+    .card_populaire
+    {
+        width: 88%;
+    }
+
+    /*****************************hébergements*******************************************/
+
+    #hebergements
+    {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0%;
+        border-radius: 0%;
+        background-color: #FFFFFF;
+        padding: 0%;
+    }
+
+    #hebergements h2
+    {
+        padding-left: 1em;
+    }
+
+    .card_hebergement
+    {
+        width: 88%;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .card_hebergement img
+    {
+        width: 100%;
+        height: 180px;
+    }
+
+    .suite
+    {
+        padding-left: 1.5em;
+    }
+
+    /***********************************activités***************************************/
+
+    #cards_activites
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #cards_activites img
+    {
+        height: 275px;
+    }
+
+    .card_activite_solo, .card_activite1, .card_activite2, .card_activite3, .card_activite4
+    {
+        height: 330px;
+        width: 100%;
+        margin-bottom: 1.1em;
+    }
+
+    .double_activite
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card_activite_solo
+    {
+        margin: 0 0 1.1em 0;
     }
 }
