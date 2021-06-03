@@ -20,7 +20,6 @@
 #bloc_page
 {
     font-family: 'raleway', sans-serif;
-    max-width: 1440px;
 }
 
 h1, h2, h3
@@ -600,7 +599,7 @@ footer li
 
     #nav_activites
     {
-        padding-left: 95px;
+        padding-left: 25%;
     }
 
     nav a:hover
@@ -768,7 +767,7 @@ footer li
     }
 }
 
-@media all and (min-width: 481px) and (max-width: 590px)
+@media all and (min-width: 478px) and (max-width: 590px)
 {
     nav ul
     {
@@ -785,6 +784,11 @@ footer li
         position: relative;
         top: 0;
         right: 0;
+    }
+
+    .card_hebergement
+    {
+        width: 45%;
     }
 }
 
@@ -902,7 +906,7 @@ footer li
 
     .card_populaire
     {
-        width: 88%;
+        width: 65%;
     }
 
     /*****************************hébergements*******************************************/
@@ -924,8 +928,7 @@ footer li
 
     .card_hebergement
     {
-        width: 88%;
-        height: 250px;
+        width: 45%;
         margin: auto;
         margin-bottom: 1em;
     }
@@ -933,7 +936,6 @@ footer li
     .card_hebergement img
     {
         width: 100%;
-        height: 180px;
     }
 
     .suite
@@ -945,13 +947,14 @@ footer li
 
     #cards_activites
     {
-        flex-direction: column;
+        flex-direction: row;
         height: 100%;
+        flex-wrap: wrap;
     }
 
     #cards_activites img
     {
-        height: 275px;
+        min-height: 275px;
     }
 
     .card_activite_solo, .card_activite1, .card_activite2, .card_activite3, .card_activite4
@@ -964,11 +967,48 @@ footer li
     .double_activite
     {
         height: 100%;
-        width: 100%;
+        width: 45%;
     }
 
     .card_activite_solo
     {
         margin: 0 0 1.1em 0;
+        width: 45%;
+        height: 680px;
+    }
+
+    .img_activite_solo img
+    {
+        height: 620px;
+    }
+}
+
+@media all and (min-width: 716px) and (max-width: 950px)
+{
+    .card_hebergement
+    {
+        width: 30%;
+    }    
+}
+
+@media all and (min-width: 950px) and (max-width: 1165px)
+{
+    .text_aside
+    {
+        font-size: 0.82em;
+    }
+}
+
+
+@media all and (min-width: 331px) and (max-width: 480px)
+{
+    #ville
+    {
+        width: 55%;
+    }
+
+    #button
+    {
+        width: 25%;
     }
 }
