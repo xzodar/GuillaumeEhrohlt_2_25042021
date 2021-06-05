@@ -767,7 +767,7 @@ footer li
     }
 }
 
-@media all and (min-width: 478px) and (max-width: 590px)
+@media all and (min-device-width: 478px) and (max-device-width: 590px)
 {
     nav ul
     {
@@ -792,7 +792,7 @@ footer li
     }
 }
 
-@media all and (min-width: 591px) and (max-width: 950px)
+@media all and (min-device-width: 591px) and (max-device-width: 950px)
 {
     /**************************************Header*********************************************/
     header
@@ -974,16 +974,11 @@ footer li
     {
         margin: 0 0 1.1em 0;
         width: 45%;
-        height: 680px;
-    }
-
-    .img_activite_solo img
-    {
-        height: 620px;
+        height: 100%;
     }
 }
 
-@media all and (min-width: 716px) and (max-width: 950px)
+@media all and (min-device-width: 716px) and (max-device-width: 950px)
 {
     .card_hebergement
     {
@@ -991,7 +986,7 @@ footer li
     }    
 }
 
-@media all and (min-width: 950px) and (max-width: 1165px)
+@media all and (min-device-width: 950px) and (max-device-width: 1165px)
 {
     .text_aside
     {
@@ -1000,7 +995,7 @@ footer li
 }
 
 
-@media all and (min-width: 331px) and (max-width: 480px)
+@media all and (min-device-width: 331px) and (max-device-width: 480px)
 {
     #ville
     {
@@ -1011,4 +1006,58 @@ footer li
     {
         width: 25%;
     }
+}
+
+@media all and (min-device-width: 478px) and (max-device-width:590px)
+{
+    .card_activite_solo, .card_activite1, .card_activite2, .card_activite3, .card_activite4
+    {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1.2em;
+    }
+}
+
+@media all and (max-device-width: 330px)
+{
+    form
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .position
+    {
+        display: none;
+    }
+
+    #ville
+    {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #button
+    {
+        width: 40%;
+        margin-top: 1em;
+        border-radius: 5px;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 25%;
+    }
+
+    #inscrire
+    {
+        position: initial;
+    }
+
+
 }
