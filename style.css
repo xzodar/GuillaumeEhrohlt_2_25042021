@@ -434,7 +434,7 @@ aside
 
 .title_activite h3
 {
-    margin: 1em 0 0 1em;
+    margin: 1em 0 1em 1em;
     font-size: 1.1em;
 }
 
@@ -487,7 +487,6 @@ aside
 .card_activite3
 {
     width: 100%;
-    height: 210px;
     border-radius: 20px;
     box-shadow: 0 0 10px grey;
 }
